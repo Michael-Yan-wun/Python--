@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #將內文轉換為向量值計算(Tf-idf)
 tfidf_vectorizer = TfidfVectorizer()
 tfidf = tfidf_vectorizer.fit_transform(NewsContent)
