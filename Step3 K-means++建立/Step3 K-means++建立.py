@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-##K-Means計算距離
+#K-Means計算距離
 class KMeans:
     def cal_dist(self, p0, p1):
 #         """
