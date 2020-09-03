@@ -42,6 +42,7 @@ def read_xlsx(filename):
                      })
     return data
 
+#寫入json檔
 Data = read_xlsx("Data.xlsx")
 with open('Output.json','w', encoding = 'utf8' ) as f:
     json.dump(Data,f,indent=4,ensure_ascii=False)
