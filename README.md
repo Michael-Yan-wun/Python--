@@ -31,15 +31,9 @@
 ####        最後將每個點藉由新的中心點將每個點分成n群，進而完成分類任務。
             class KMeans:
     def cal_dist(self, p0, p1):
-#         """
-#         比較兩點的距離
-#         """
         return np.sqrt(np.sum((p0-p1)**2))
     
     def nearest_cluster_center(self, point, cluster_centers):
-#         """
-#         找到距離 point 最近的中心點
-#         """
         min_dist = float("inf")
         m = cluster_centers.shape[0]
         for i in range(m):
@@ -49,9 +43,6 @@
         return min_dist 
 
     def get_centroids(self, datapoints, k):
-#         """
-#         K-means++ 演算法，取得初始化中心點
-#         """
         clusters = np.array([random.choice(datapoints)])
         dist = np.zeros(len(datapoints))
         
@@ -72,9 +63,6 @@
         
         
     def kmeans_plus_plus(self, datapoints, k=2):
-#         """
-#         K-means 演算法
-#         """
         # 定義資料維度
         d = datapoints.shape[1]
         # 最大的迭代次數
